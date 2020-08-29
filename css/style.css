@@ -1,0 +1,49 @@
+.test {
+  text-align: center;
+}
+
+.menu {
+  float: right;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  text-decoration: none;
+}
+
+.description {
+  color: #fd12cc;
+}
+.description:hover {
+  color: #000;
+}
+
+.tools-description {
+  text-align: center;
+}
+.tools-item {
+  float: left;
+}
+
+.item1, .item2, .item3 {
+  font-size: 22px;
+  line-height: 12px;
+  background-color: rgba(18, 220, 49, 0.8);
+}
+
+.item1 {
+  color: red;
+}
+
+.item2 {
+  color: blue;
+}
+
+.item3 {
+  color: green;
+}

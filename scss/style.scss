@@ -1,0 +1,55 @@
+/*переменная*/
+$top-color: #fd12cc;
+$top-font: 'lato', sans-serif;
+
+.test {
+  text-align: center;
+}
+/*вложенность*/
+.menu {
+  float: right;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+/*& - заменяется на родителя*/
+.description {
+  color: $top-color;
+  &:hover {
+    color: #000;
+  }
+}
+.tools {
+  &-description {
+    text-align: center;
+  }
+  &-item {
+    float: left;
+  }
+}
+/*% - используется с @extend для повторяющихся стилей*/
+%name-item {
+  font-size: 22px;
+  line-height: 12px;
+  /*задание цвета rgba через решётку*/
+  background-color: rgba(#12dc31, .8);
+}
+.item1 {
+  color: red;
+  @extend %name-item;
+}
+.item2 {
+  color: blue;
+  @extend %name-item;
+}
+.item3 {
+  color: green;
+  @extend %name-item;
+}

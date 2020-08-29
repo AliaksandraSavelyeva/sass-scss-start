@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*переменная */
+/*вложенность, нет фигурных скобок и точек с запятой */
+.test {
+  text-align: center;
+}
+.test ul {
+  margin-bottom: 12px;
+}
+.test li {
+  display: compact;
+}
+.test a {
+  text-decoration: none;
+}
+
+.description {
+  color: #fd12cc;
+}
+.description:hover {
+  color: #000;
+}
